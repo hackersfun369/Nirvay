@@ -207,7 +207,7 @@ border-radius: 10px;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #E3F4F4;
+    background-color: transparent;
     z-index: 999;
     border-radius: 20px;
     padding: 20px;
