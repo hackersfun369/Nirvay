@@ -290,11 +290,11 @@ currimg.addEventListener('click', function() {
   if (audio.paused) {
     audio.play();
     currentTitle.style.color="green";
-    currimg.src = "./pause.png";
+    currimg.src = "pause.png";
   } else {
     audio.pause();
     currentTitle.style.color="black";
-    currimg.src = "./play-button-arrowhead.png";
+    currimg.src = "play-button.png";
   }
 });
 
