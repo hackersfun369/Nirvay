@@ -268,11 +268,11 @@ overflow: hidden;
 color: white;
 }
 .lyrics{
-width: 300px;
+width: 200px;
 height: 200px;
 }
 .lyrics p{
-width: 80%;
+width: 100%;
 height: 200px; 
 overflow-y: auto;
 overflow-x: auto;
