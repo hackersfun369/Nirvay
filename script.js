@@ -96,7 +96,7 @@ performFetch();
 
 function performsearch() {
   const searchterm = document.getElementById('search-input').value;
-  const url = `https://saavn.dev/api/search/songs?query=${searchterm}&limit=20`;
+  const url = `https://saavn.dev/api/search/songs?query=${searchterm}&limit=40`;
   fetch(url)
     .then(response => response.json())
     .then(res => {
