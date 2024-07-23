@@ -211,10 +211,17 @@ function displaysearch(results) {
     `;
 
     songDiv.addEventListener('click', function() {
-    currentDiv.style.display = 'block';
-    quickpicks.style.display = 'none';
-    favoritesDiv.style.display = 'none';
-    searchdiv.style.display = 'none';
+      if (document.body.clientWidth < 1000) {
+        currentDiv.style.display = 'block';
+        quickpicks.style.display = 'none';
+        favoritesDiv.style.display = 'none';
+        searchdiv.style.display = 'none';
+      } else {
+        currentDiv.style.display = 'block';
+        quickpicks.style.display = 'none';
+        favoritesDiv.style.display = 'none';
+        searchdiv.style.display = 'block';
+      }
       // Update current-play elements
       updateCurrentPlaying({
         img: songDiv.querySelector('img').src,
@@ -326,63 +333,56 @@ function toggleLyrics() {
     lyrics1.style.display = 'none';
   }
 }
-function toggleAlbum() {
-  currentDiv.style.display = 'none';
-  quickpicks.style.display = 'none';
-  favoritesDiv.style.display = 'none';
-  searchdiv.style.display = 'none';
-  searchInput.style.display="none";
-  artistDiv.style.display = 'none';
-  albumDiv.style.display="block";
-  artistinput.style.display="none";
-}
+// Get references to your elements
+const favoritesDiv = document.getElementById('favourites');
+const artistDiv = document.getElementById('artistsdiv');
+const albumDiv = document.getElementById('albumdiv');
+const artistinput = document.getElementById('artistinput');
+const searchdiv = document.getElementById('search');
+const searchInput = document.getElementById('search-input');
+
 function toggleArtists() {
-  currentDiv.style.display = 'none';
-  quickpicks.style.display = 'none';
-  favoritesDiv.style.display = 'none';
-  searchdiv.style.display = 'none';
-  searchInput.style.display="none";
-  artistDiv.style.display = 'block';
-  albumDiv.style.display="none";
-  artistinput.style.display="block";
+    currentDiv.style.display = 'none';
+    quickpicks.style.display = 'none';
+    favoritesDiv.style.display = 'none';
+    searchdiv.style.display = 'none';
+    searchInput.style.display = "none";
+    artistDiv.style.display = 'block';
+    albumDiv.style.display = "none";
+    artistinput.style.display = "block";
 }
+
 function toggleCurrent() {
     currentDiv.style.display = 'block';
     quickpicks.style.display = 'none';
     favoritesDiv.style.display = 'none';
     searchdiv.style.display = 'none';
-    searchInput.style.display="none";
+    searchInput.style.display = "none";
     artistDiv.style.display = 'none';
-    albumDiv.style.display="none";
-    artistinput.style.display="none";
+    albumDiv.style.display = 'none';
+    artistinput.style.display = "none";
 }
 
-const favoritesDiv = document.getElementById('favourites');
-const artistDiv = document.getElementById('artistsdiv');
-const albumDiv = document.getElementById('albumdiv');
-const artistinput = document.getElementById('artistinput');
-const artistimg = document.getElementById('artistimg');
 function toggleFavourite() {
     favoritesDiv.style.display = 'block';
     currentDiv.style.display = 'none';
     quickpicks.style.display = 'none';
     searchdiv.style.display = 'none';
-    searchInput.style.display="none";
+    searchInput.style.display = "none";
     artistDiv.style.display = 'none';
-    albumDiv.style.display="none";
-    artistinput.style.display="none";
+    albumDiv.style.display = "none";
+    artistinput.style.display = "none";
 }
-const searchdiv = document.getElementById('search');
-const searchInput= document.getElementById('search-input');
+
 function toggleSearch() {
-  searchInput.style.display="block";
+    searchInput.style.display = "block";
     searchdiv.style.display = 'block';
     currentDiv.style.display = 'none';
     quickpicks.style.display = 'none';
     favoritesDiv.style.display = 'none';
     artistDiv.style.display = 'none';
-    albumDiv.style.display="none";
-    artistinput.style.display="none";
+    albumDiv.style.display = "none";
+    artistinput.style.display = "none";
 }
 
 function toggleQuicks() {
@@ -390,11 +390,24 @@ function toggleQuicks() {
     currentDiv.style.display = 'none';
     quickpicks.style.display = 'block';
     favoritesDiv.style.display = 'none';
-    searchInput.style.display="none";
+    searchInput.style.display = "none";
     artistDiv.style.display = 'none';
-    albumDiv.style.display="none";
-    artistinput.style.display="none";
+    albumDiv.style.display = "none";
+    artistinput.style.display = "none";
 }
+
+// Function to check window width and adjust currentDiv display
+function checkWindowSize() {
+    if (window.innerWidth > 1000) {
+        currentDiv.style.display = 'block';
+    } 
+}
+
+// Event listener for window resize
+window.addEventListener('resize', checkWindowSize);
+
+// Initial check on page load
+checkWindowSize();
 
 
 function displayQuickAlbum(results) {
@@ -584,10 +597,17 @@ function loadFavoritesFromLocalStorage() {
     });
 
     favDiv.addEventListener('click', function() {
-      currentDiv.style.display = 'block';
-      quickpicks.style.display = 'none';
-      favoritesDiv.style.display = 'none';
-      searchdiv.style.display = 'none';
+       if (document.body.clientWidth < 1000) {
+        currentDiv.style.display = 'block';
+        quickpicks.style.display = 'none';
+        favoritesDiv.style.display = 'none';
+        searchdiv.style.display = 'none';
+      } else {
+        currentDiv.style.display = 'block';
+        quickpicks.style.display = 'none';
+        favoritesDiv.style.display = 'block';
+        searchdiv.style.display = 'none';
+      }
       // Update current-play elements
       updateCurrentPlaying({
         img: favDiv.querySelector('img').src,
@@ -683,10 +703,19 @@ function displayArtistSongs(songs) {
     `;
 
     songDiv.addEventListener('click', function() {
-      currentDiv.style.display = 'block';
-      quickpicks.style.display = 'none';
-      favoritesDiv.style.display = 'none';
-      searchdiv.style.display = 'none';
+       if (document.body.clientWidth < 1000) {
+        currentDiv.style.display = 'block';
+        quickpicks.style.display = 'none';
+        favoritesDiv.style.display = 'none';
+        searchdiv.style.display = 'none';
+        artistDiv.style.display = 'none';
+      } else {
+        currentDiv.style.display = 'block';
+        quickpicks.style.display = 'none';
+        favoritesDiv.style.display = 'none';
+        searchdiv.style.display = 'none';
+        artistDiv.style.display = 'block';
+      }
 
       updateCurrentPlaying({
         img: song.image[2].url,
