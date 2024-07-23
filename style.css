@@ -483,8 +483,8 @@ font-size: 16px;
   text-decoration: none;
 }
 .current-img{
-  width: 280px;
-  height: 280px;
+  width: 230px;
+  height: 230px;
 }
 @media (min-width:1000px){
   aside{
