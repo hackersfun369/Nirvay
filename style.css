@@ -482,3 +482,31 @@ font-size: 16px;
   text-transform: capitalize;
   text-decoration: none;
 }
+.current-img{
+  width: 280px;
+  height: 280px;
+}
+@media (min-width:1000px){
+  aside{
+    min-width:20%;
+  }
+  aside a{
+    rotate: -360deg;
+    width: 80%;
+    margin: 20px;
+  }
+  #quickpicks,#search,#artistsdiv,#favourites{
+    width: 45%;
+    position: fixed;
+    left: 21%;
+  }
+  #current-play{
+    display: block !important;
+    width: 29%;
+    position: fixed;
+    right: 0;
+    border-left: 6px solid #C4DFDF;
+    border-radius: 20px;
+    height: 80%;
+  }
+}
