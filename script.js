@@ -139,7 +139,7 @@ function displayResults(results) {
   results.forEach(result => {
     const id = result.id;
     const songName = result.name;
-    const audioUrl = result.downloadUrl[3].url;
+    const audioUrl = result.downloadUrl[2].url;
     const imageUrl = result.image[2].url;
     const singerName = result.artists.primary[0].name;
 
@@ -190,7 +190,7 @@ function displaysearch(results) {
   results.forEach(result => {
     const id = result.id;
     const songName = result.name;
-    const audioUrl = result.downloadUrl[3].url;
+    const audioUrl = result.downloadUrl[2].url;
     const imageUrl = result.image[2].url;
     const singerName = result.artists.primary[0].name;
 
