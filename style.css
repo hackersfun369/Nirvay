@@ -553,4 +553,8 @@ font-size: 16px;
   #search-input{
     width: 96%;
   }
+    .aside2 a.active {
+  background-color: transparent;
+  color: green;
+}
 }
