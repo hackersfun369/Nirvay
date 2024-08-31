@@ -554,7 +554,10 @@ font-size: 16px;
     width: 96%;
   }
     .aside2 a.active i{
-  background-color: transparent;
+  color: green;
+}
+    .aside2 a.active{
+        background-color:transparent;
   color: green;
 }
 }
