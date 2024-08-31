@@ -7,7 +7,7 @@ body{
 body::-webkit-scrollbar {
   display: none;
 }
-aside{
+.aside1,.aside2{
     display: flex;
     flex-direction: column;
     width: 18%;
@@ -23,7 +23,7 @@ aside{
     
 }
 
-aside a{
+.aside1 a{
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
@@ -41,7 +41,7 @@ aside a{
     font-family: ubuntu;
     border-radius: 20px;
 }
-aside a.active {
+.aside1 a.active,.aside2 a.active {
   background-color: white;
   color: #070F2B;
 }
