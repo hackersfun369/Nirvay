@@ -513,7 +513,7 @@ font-size: 16px;
     height: 80%;
   }
 }
-@media only screen and (min-width: 0) and (max-width: 680px){
+@media only screen and (min-width: 0) and (max-width: 999px){
   .aside1{
     display: none;
   }
@@ -531,7 +531,7 @@ font-size: 16px;
   }
   #quickpicks,#favourites,#search,.artistsdiv,.current-play{
     width: 98%;
-    height: 89%;
+    height: 86%;
     overflow: auto;
   }
   .aside2 a i{
