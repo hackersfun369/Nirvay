@@ -529,11 +529,21 @@ font-size: 16px;
     bottom: 0;
     z-index:2000;  
   }
-  #quickpicks,#favourites,#search,.artistsdiv,.current-play{
+  #quickpicks,#search,.current-play{
     width: 98%;
     height: 86%;
     overflow: auto;
   }
+  #favourites{
+    width: 98%;
+    height: 89%;
+    overflow: auto;
+    }
+    .artistsdiv{
+        width: 98%;
+    height: 85%;
+    overflow: auto;
+    }
   .aside2 a i{
     color: black;
     font-size: 20px;
