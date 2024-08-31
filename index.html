@@ -15,11 +15,20 @@
     <aside>
         <div class="input"><input type="text" id="search-input" placeholder="Search Song..."></div>
         <div class="artistinput" id="artistinput"><input type="text" class="artist-search" id="artist-search" placeholder="Search Artist..."></div>
-        <a href="#" class="currenta" onclick="toggleCurrent()" id="currenta">Current</a>
+        <div class="aside1" id="aside1">
+            <a href="#" class="currenta" onclick="toggleCurrent()" id="currenta">Current</a>
         <a href="#" class="quickpicksa" onclick="toggleQuicks()" id="quickpicksa">Quick_Picks</a>
         <a href="#" class="songsa" onclick="toggleSearch()" id="songsa">Search</a>
         <a href="#" class="playlistsa" onclick="toggleFavourite()" id="playlistsa">Favourites</a>
         <a href="#" class="artistsa" onclick="toggleArtists()" id="artistsa">Artists</a>
+        </div>
+        <div class="aside2" id="aside2">
+            <a href="#" class="currenta" onclick="toggleCurrent()" id="currenta"><i class="fa-solid fa-music"></i></a>
+        <a href="#" class="quickpicksa" onclick="toggleQuicks()" id="quickpicksa"><i class="fa-solid fa-house"></i></a>
+        <a href="#" class="songsa" onclick="toggleSearch()" id="songsa"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" class="playlistsa" onclick="toggleFavourite()" id="playlistsa"><i class="fa-solid fa-star"></i></a>
+        <a href="#" class="artistsa" onclick="toggleArtists()" id="artistsa"><i class="fa-solid fa-user"></i></a>
+        </div>
     </aside>
     <div id="quickpicks">
         <div id="quick-results">
