@@ -531,7 +531,7 @@ font-size: 16px;
   }
   #quickpicks,#favourites,#search,.artistsdiv,.current-play{
     width: 98%;
-    height: 80%;
+    height: 89%;
     overflow: auto;
   }
   .aside2 a i{
