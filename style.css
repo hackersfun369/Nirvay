@@ -553,7 +553,7 @@ font-size: 16px;
   #search-input{
     width: 96%;
   }
-    .aside2 a.active {
+    .aside2 a.active i{
   background-color: transparent;
   color: green;
 }
