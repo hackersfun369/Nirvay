@@ -543,5 +543,9 @@ font-size: 16px;
   #search-input{
     width: 96%;
   }
-
+#current-play{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 }
