@@ -513,3 +513,35 @@ font-size: 16px;
     height: 80%;
   }
 }
+@media only screen and (min-width: 0) and (max-width: 500px){
+  .aside1{
+    display: none;
+  }
+  .aside2{
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 9%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    z-index:2000;  
+  }
+  #quickpicks,#favourites,#search,.artistsdiv,.current-play{
+    width: 98%;
+    height: 90%;
+    overflow: auto;
+  }
+  .aside2 a i{
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 30px;
+  }
+  #search-input{
+    width: 96%;
+  }
+
+}
