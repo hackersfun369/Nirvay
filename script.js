@@ -96,7 +96,7 @@ performFetch();
 
 function performsearch() {
   const searchterm = document.getElementById('search-input').value;
-  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/search/songs?query=${searchterm}&page=1&limit=40`;
+  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/search/songs?query=${searchterm}&page=1&limit=60`;
   fetch(url)
     .then(response => response.json())
     .then(res => {
@@ -675,7 +675,7 @@ function performFetch2() {
       .catch(error => console.error(error));
 }
 function performFetch1(id) {
-  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/artists/${id}/songs`;
+  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/artists/${id}/songs&limit=40`;
   fetch(url)
     .then(response => response.json())
     .then(res => {
