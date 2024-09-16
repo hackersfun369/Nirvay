@@ -536,6 +536,7 @@ font-size: 16px;
   }
 .current-img{
 width:100%;
+height:300px;
 margin:0;
 
 }
@@ -565,10 +566,16 @@ margin:0;
         background-color:transparent;
   color: green;
 }
+.aside1{
+display: none;
+}
 }
 @media only screen and (min-width: 651) and (max-width: 1000px){
 .current-img{
 width:40%;
 margin:20px;
+}
+.aside2{
+display:none;
 }
 }
