@@ -675,7 +675,7 @@ function performFetch2() {
       .catch(error => console.error(error));
 }
 function performFetch1(id) {
-  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/artists/${id}/songs&limit=40`;
+  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/artists/${id}/songs?limit=40`;
   fetch(url)
     .then(response => response.json())
     .then(res => {
