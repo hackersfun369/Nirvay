@@ -513,7 +513,7 @@ font-size: 16px;
     height: 80%;
   }
 }
-@media only screen and (min-width: 0) and (max-width: 900px){
+@media only screen and (min-width: 0) and (max-width: 650px){
   .aside1{
     display: none;
   }
@@ -534,6 +534,11 @@ font-size: 16px;
     height: 86%;
     overflow: auto;
   }
+.current-img{
+width:100%;
+margin:0;
+
+}
   #favourites{
     width: 98%;
     height: 89%;
@@ -559,5 +564,11 @@ font-size: 16px;
     .aside2 a.active{
         background-color:transparent;
   color: green;
+}
+}
+@media only screen and (min-width: 651) and (max-width: 1000px){
+.current-img{
+width:40%;
+margin:20px;
 }
 }
