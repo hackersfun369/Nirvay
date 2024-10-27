@@ -96,7 +96,7 @@ performFetch();
 
 function performsearch() {
   const searchterm = document.getElementById('search-input').value;
-  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/search/songs?query=${searchterm}&page=1&limit=60`;
+  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/search/songs?query=${searchterm}&limit=60`;
   fetch(url)
     .then(response => response.json())
     .then(res => {
