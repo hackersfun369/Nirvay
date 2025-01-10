@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function performFetch() {
-  const url = "https://jiosaavan-api-2-harsh-patel.vercel.app/api/search/songs?query=english&page=1&limit=20";
+  const url = "https://saavn.dev/api/search/songs?query=english&page=1&limit=20";
   fetch(url)
     .then(response => response.json())
     .then(res => {
@@ -96,7 +96,7 @@ performFetch();
 
 function performsearch() {
   const searchterm = document.getElementById('search-input').value;
-  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/search/songs?query=${searchterm}&limit=60`;
+  const url = `https://saavn.dev/api/search/songs?query=${searchterm}&limit=60`;
   fetch(url)
     .then(response => response.json())
     .then(res => {
@@ -108,7 +108,7 @@ function performsearch() {
 }
 
 function fetchQuickAlbum() {
-  const url = "https://jiosaavan-api-2-harsh-patel.vercel.app/api/search/albums?query=english&page=1&limit=10";
+  const url = "https://saavn.dev/api/search/albums?query=english&page=1&limit=10";
   fetch(url)
     .then(response => response.json())
     .then(res => {
@@ -246,7 +246,7 @@ function displaysearch(results) {
 
 
 function fetchLyrics(id) {
-  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/songs/${id}/lyrics`;
+  const url = `https://saavn.dev/api/songs/${id}/lyrics`;
   fetch(url)
     .then(response => {
       if (!response.ok) {
@@ -661,7 +661,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function performFetch2() {
   const searchartist = document.getElementById('artist-search').value;
-  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/search/artists?query=${searchartist}`;
+  const url = `https://saavn.dev/api/search/artists?query=${searchartist}`;
   fetch(url)
       .then(response => response.json())
       .then(res => {
@@ -675,7 +675,7 @@ function performFetch2() {
       .catch(error => console.error(error));
 }
 function performFetch1(id) {
-  const url = `https://jiosaavan-api-2-harsh-patel.vercel.app/api/artists/${id}/songs?limit=40`;
+  const url = `https://saavn.dev/api/artists/${id}/songs?limit=40`;
   fetch(url)
     .then(response => response.json())
     .then(res => {
