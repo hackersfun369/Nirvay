@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 const baseUrl = "https://jiosaavan-api-2-harsh-patel.vercel.app"
 function performFetch() {
-  const url = "${baseUrl}/api/search/songs?query=english&page=1&limit=20";
+  const url = `${baseUrl}/api/search/songs?query=english&page=1&limit=20`;
   fetch(url)
     .then(response => response.json())
     .then(res => {
@@ -108,7 +108,7 @@ function performsearch() {
 }
 
 function fetchQuickAlbum() {
-  const url = "${baseUrl}/api/search/albums?query=english&page=1&limit=10";
+  const url = `${baseUrl}/api/search/albums?query=english&page=1&limit=10`;
   fetch(url)
     .then(response => response.json())
     .then(res => {
