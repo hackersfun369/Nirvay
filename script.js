@@ -78,9 +78,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // Call the initialization function on page load
   initializeDivVisibility();
 });
-
+const baseUrl = "
+https://jiosaavan-api-2-harsh-patel.vercel.app"
 function performFetch() {
-  const url = "https://saavn.dev/api/search/songs?query=english&page=1&limit=20";
+  const url = "${baseUrl}/api/search/songs?query=english&page=1&limit=20";
   fetch(url)
     .then(response => response.json())
     .then(res => {
@@ -96,7 +97,7 @@ performFetch();
 
 function performsearch() {
   const searchterm = document.getElementById('search-input').value;
-  const url = `https://saavn.dev/api/search/songs?query=${searchterm}&limit=60`;
+  const url = `${baseUrl}/api/search/songs?query=${searchterm}&limit=60`;
   fetch(url)
     .then(response => response.json())
     .then(res => {
@@ -108,7 +109,7 @@ function performsearch() {
 }
 
 function fetchQuickAlbum() {
-  const url = "https://saavn.dev/api/search/albums?query=english&page=1&limit=10";
+  const url = "${baseUrl}/api/search/albums?query=english&page=1&limit=10";
   fetch(url)
     .then(response => response.json())
     .then(res => {
@@ -246,7 +247,7 @@ function displaysearch(results) {
 
 
 function fetchLyrics(id) {
-  const url = `https://saavn.dev/api/songs/${id}/lyrics`;
+  const url = `${baseUrl}/api/songs/${id}/lyrics`;
   fetch(url)
     .then(response => {
       if (!response.ok) {
@@ -661,7 +662,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function performFetch2() {
   const searchartist = document.getElementById('artist-search').value;
-  const url = `https://saavn.dev/api/search/artists?query=${searchartist}`;
+  const url = `${baseUrl}/api/search/artists?query=${searchartist}`;
   fetch(url)
       .then(response => response.json())
       .then(res => {
@@ -675,7 +676,7 @@ function performFetch2() {
       .catch(error => console.error(error));
 }
 function performFetch1(id) {
-  const url = `https://saavn.dev/api/artists/${id}/songs?limit=40`;
+  const url = `${baseUrl}/api/artists/${id}/songs?limit=40`;
   fetch(url)
     .then(response => response.json())
     .then(res => {
