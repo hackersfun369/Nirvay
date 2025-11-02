@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Call the initialization function on page load
   initializeDivVisibility();
 });
-const baseUrl = "https://saavn.dev"
+const baseUrl = "https://jiosaavan-api-2-harsh-patel.vercel.app"
 function performFetch() {
   const url = `${baseUrl}/api/search/songs?query=english&page=1&limit=20`;
   fetch(url)
@@ -729,3 +729,4 @@ function displayArtistSongs(songs) {
     container.appendChild(songDiv);
   });
 }
+
